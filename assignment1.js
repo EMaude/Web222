@@ -75,3 +75,102 @@ for (var i = 0; i <= 10; i++)
 /*****************************
 * Task 5
 *****************************/
+
+function largerNum(a, b)
+{
+	return (a > b)? a : b;
+}
+
+var greaterNum = function(a,b) {return (a > b)? a : b};
+
+
+var a1 = 5;
+var b1 = 12;
+var a2 = 32;
+var b2 = 15;
+
+console.log("The larger number of " + a1 + " and " + b1 + " is " + largerNum(a1, b1));
+console.log("The larger number of " + a2 + " and " + b2 + " is " + largerNum(a2, b2));
+
+console.log("The larger number of " + a1 + " and " + b1 + " is " + greaterNum(a1, b1));
+console.log("The larger number of " + a2 + " and " + b2 + " is " + greaterNum(a2, b2));
+
+/*****************************
+* Task 6
+*****************************/
+
+
+var evaluator = function()
+{
+	var sum = 0;
+	for(var i = 1; i < arguments.length; i++)
+	{
+		sum += arguments[i];
+	}
+	var average = sum/arguments.length;
+	return ( average > 50)? true : false;
+}
+
+var g1 = 45, g2 = 87, g3 = 56, g4 = 23;
+var result = (evaluator(g1, g2, g3, g4))? "pass." : "fail.";
+console.log("The result of grades " + g1 + " " + g2 + " " + g3 + " " + g4 + " is a " + result);
+
+var g1 = 65, g2 = 87, g3 = 66, g4 = 65, g5 = 78, g6 = 89;
+result = (evaluator(g1, g2, g3, g4, g5, g6))? "pass." : "fail.";
+console.log("The result of grades " + g1 + " " + g2 + " " + g3 + " " + g4 + " " + g5 + " " + g6 + " is a " + result);
+
+var g1 = 34, g2 = 54, g3 = 23;
+result = (evaluator(g1, g2, g3))? "pass." : "fail.";
+console.log("The result of grades " + g1 + " " + g2 + " " + g3 + " is a " + result);
+
+/*****************************
+* Task 7
+*****************************/
+
+var grader = function(score)
+{ 
+	var result;
+	if(score >= 90)
+	{
+		result = "A";
+	}
+	else if(score >= 80 && score < 90)
+	{
+		result = "B";
+	}
+	else if(score >= 70 && score < 80)
+	{
+		result = "C";
+	}
+	else if(score >= 60 && score < 70)
+	{
+		result = "D";
+	}
+	else
+	{
+		result = "F";
+	}
+	return result;
+}
+
+var grade = 79;
+console.log("A grade of " + grade + " is a " + grader(grade));
+grade = 46;
+console.log("A grade of " + grade + " is a " + grader(grade));
+grade = 84;
+console.log("A grade of " + grade + " is a " + grader(grade));
+
+/*****************************
+* Task 8
+*****************************/
+
+function showMultiples(num, numMultiples)
+{
+	for(i = num; i <= numMultiples; i++)
+	{
+		console.log(num + " x " + i + " = " + (num * i));
+	}
+}
+
+showMultiples(2, 10);
+showMultiples(32, 23);
