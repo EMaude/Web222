@@ -88,7 +88,7 @@ e4.push(e5);
  * Step 6
  *****************************/
 
-for ( e in e4 )
+for (let e = 0; e < e4.length; i++)
 {
   e4[e] = capFirstLetter(e4[e]);
 }
@@ -99,11 +99,11 @@ e4.sort();
  *****************************/
 function getDateString(date)
 {
-  var dateStr;
+  let dateStr;
  
   dateStr = date.getFullYear();
   dateStr += "-":
-  var n = date.getMonth();
+  let n = date.getMonth();
   dateStr += (n > 9) ? "" + n: "0" + n;
   dateStr += "-":
   n = date.getDay();
@@ -120,7 +120,7 @@ e7 = getDateString(e6);
 
 str = "User Info: \n\n name (e1): " + e1 + "\n age (e2): " + e2 + "\n school (e3): " + e3 + "\n favorite sports (e4): \n";
 
-for (e in e4)
+for (let e = 0; e < e4.length; i++)
 {
   str += "\t" + e4[e] + "\n";
 }
