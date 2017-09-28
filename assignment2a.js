@@ -66,7 +66,7 @@ e3 = e3.split(" ");
 capFirstLetter(e3[0]);
 capFirstLetter(e3[1]);
 
-e3 = e3[0] + e3[1];
+e3 = e3[0] + " " + e3[1];
 
 /*****************************
  * Step 5
@@ -90,7 +90,7 @@ e4.push(e5);
 
 for ( e in e4 )
 {
-  e = toUpperCase(e);
+  e4[e] = capFirstLetter(e4[e]);
 }
 e4.sort();
 
@@ -102,14 +102,16 @@ function getDateString(date)
   var dateStr;
  
   dateStr = date.getFullYear();
+  dateStr += "-":
   var n = date.getMonth();
   dateStr += (n > 9) ? "" + n: "0" + n;
+  dateStr += "-":
   n = date.getDay();
   dateStr += (n > 9) ? "" + n: "0" + n;
   return dateStr
 }
 
-e6 = new date();
+e6 = new Date();
 e7 = getDateString(e6);
 
 /*****************************
@@ -120,7 +122,9 @@ str = "User Info: \n\n name (e1): " + e1 + "\n age (e2): " + e2 + "\n school (e3
 
 for (e in e4)
 {
-  str += "\t" + e4 + "\n";
+  str += "\t" + e4[e] + "\n";
 }
 
 str += "current date (e7): " + e7;
+
+console.log(str);
