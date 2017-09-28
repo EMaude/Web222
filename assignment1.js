@@ -47,7 +47,7 @@ var birthYear = year - age;
 console.log("I was born in the year " + birthYear);
 
 var collegeLength = prompt("Enter the number of year you expect to study in the college:");
-var gradYear = year + Number(collegeLength);
+var gradYear = year + parseInt(collegeLength);
 console.log("You will graduate from Seneca college in the year " + gradYear);
 
 /*****************************
@@ -173,4 +173,3 @@ function showMultiples(num, numMultiples)
 }
 
 showMultiples(2, 10);
-showMultiples(32, 23);
