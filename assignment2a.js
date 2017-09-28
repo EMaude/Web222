@@ -83,3 +83,44 @@ e5 = prompt("Enter another favorite sport", "formula 1");
 e4.push(e5);
 
 //console.log(e4);
+
+/*****************************
+ * Step 6
+ *****************************/
+
+for ( e in e4 )
+{
+  e = toUpperCase(e);
+}
+e4.sort();
+
+/*****************************
+ * Step 7
+ *****************************/
+function getDateString(date)
+{
+  var dateStr;
+ 
+  dateStr = date.getFullYear();
+  var n = date.getMonth();
+  dateStr += (n > 9) ? "" + n: "0" + n;
+  n = date.getDay();
+  dateStr += (n > 9) ? "" + n: "0" + n;
+  return dateStr
+}
+
+e6 = new date();
+e7 = getDateString(e6);
+
+/*****************************
+ * Step 8
+ *****************************/
+
+str = "User Info: \n\n name (e1): " + e1 + "\n age (e2): " + e2 + "\n school (e3): " + e3 + "\n favorite sports (e4): \n";
+
+for (e in e4)
+{
+  str += "\t" + e4 + "\n";
+}
+
+str += "current date (e7): " + e7;
