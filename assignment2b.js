@@ -24,13 +24,14 @@ var student = {
  * Start your Part B code here. Do not change the code above.
  ************************************************************/
 // task 1
+console.log("TASK 1");
 
 let lastCourse = courses.pop();
 
 console.log("Course " + lastCourse + " removed from the array\n");
 
 let newCourses = [
-    {code:'ibc233', name:'no clue', hours:'8',url:null},
+    {code:'ibc233', name:'ISERIES Business Computing', hours:'4',url:'https://scs.senecac.on.ca/~ibc233/'},
     {code:'oop244', name:'object oriented Programming', hours:'4',url:'https://scs.senecac.on.ca/~oop244/'},
     {code:'web222', name:'web programming principles', hours:'4',url:'https://scs.senecac.on.ca/~wei.song/web222/web222.html'},
     {code:'dbs201', name:'Introduction to database design and sql', hours:'4',url:'https://cs.senecac.on.ca/~dbs201/'}
@@ -41,10 +42,48 @@ console.log("Adding New Course \n\n");
 
 console.log("Course object in the array: \n"); 
 
-for(let e = 0; e < courses.length; i++)
+for(let e = 0; e < courses.length; e++)
 {
-    console.log(courses[e] + "\n");
+    console.log(courses[e].code + ", " + courses[e].name + ", " + courses[e].hours + " hours/week, website: " + courses[e].url);
 }
 
+console.log("TASK 2");
 // task 2
+
+let student1 = Object.create(student);
+student1.name = "John Smith";
+student1.dob = new Date(1990, 03, 23);
+student1.sid = "123456789";
+student1.program = "CPA";
+
+let student2 = Object.create(student);
+student2.name = "Bob Roberts";
+student2.dob = new Date(1980, 10, 13);
+student2.sid = "123456790";
+student2.program = "CPD";
+
+let student3 = Object.create(student);
+student3.name = "Jim Green";
+student3.dob = new Date(1976, 05, 30);
+student3.sid = "123446789";
+student3.program = "CPA";
+
+let student4 = Object.create(student);
+student4.name = "Rob Smith";
+student4.dob = new Date(1996, 07, 03);
+student4.sid = "123356789";
+student4.program = "CPD";
+
+let arr = new Array(4);
+arr.push(student1);
+arr.push(student2);
+arr.push(student3);
+arr.push(student4);
+
+var i = 0;
+arr.forEach(function(e){
+	console.log(i + ": " + e.toString());
+	i++;
+});
+
 
