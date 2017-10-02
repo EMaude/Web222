@@ -23,12 +23,16 @@ var student = {
 /************************************************************
  * Start your Part B code here. Do not change the code above.
  ************************************************************/
+
+//Elliot Maude
+//032830127
+
 // task 1
 console.log("TASK 1");
 
 let lastCourse = courses.pop();
 
-console.log("Course " + lastCourse + " removed from the array\n");
+console.log("Course " + lastCourse.code + " removed from the array\n");
 
 let newCourses = [
     {code:'ibc233', name:'ISERIES Business Computing', hours:'4',url:'https://scs.senecac.on.ca/~ibc233/'},

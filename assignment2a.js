@@ -63,8 +63,8 @@ e2 = getAge(e2);
 e3 = prompt("Enter your college name", "seneca college");
 
 e3 = e3.split(" ");
-capFirstLetter(e3[0]);
-capFirstLetter(e3[1]);
+e3[0] = capFirstLetter(e3[0]);
+e3[1] = capFirstLetter(e3[1]);
 
 e3 = e3[0] + " " + e3[1];
 
@@ -88,7 +88,7 @@ e4.push(e5);
  * Step 6
  *****************************/
 
-for (let e = 0; e < e4.length; i++)
+for (let e = 0; e < e4.length; e++)
 {
   e4[e] = capFirstLetter(e4[e]);
 }
@@ -102,13 +102,13 @@ function getDateString(date)
   let dateStr;
  
   dateStr = date.getFullYear();
-  dateStr += "-":
+  dateStr += "-";
   let n = date.getMonth();
   dateStr += (n > 9) ? "" + n: "0" + n;
-  dateStr += "-":
+  dateStr += "-";
   n = date.getDay();
   dateStr += (n > 9) ? "" + n: "0" + n;
-  return dateStr
+  return dateStr;
 }
 
 e6 = new Date();
@@ -120,7 +120,7 @@ e7 = getDateString(e6);
 
 str = "User Info: \n\n name (e1): " + e1 + "\n age (e2): " + e2 + "\n school (e3): " + e3 + "\n favorite sports (e4): \n";
 
-for (let e = 0; e < e4.length; i++)
+for (let e = 0; e < e4.length; e++)
 {
   str += "\t" + e4[e] + "\n";
 }
