@@ -19,3 +19,26 @@ var players = [{number: "22", nationCode: "DK", player: "Nikita Zaitsev", positi
                 {number: "19", nationCode: "CA", player: "Joffrey Lupul", position: "LW", age: 25},
                 {number: "32", nationCode: "CA", player: "Josh Leivo", position: "LW", age: 25}];
 
+window.onload = function(){
+
+    let name = document.querySelector("#name");
+    name.innerHTML = "<h3>" + logoImage.alt + "</h3>";
+
+    let logo = document.querySelector("#logo");
+    logo.innerHTML = "<img src='" + logoImage.url + "'alt=\"Error\" style=\"height: 200px\">"
+
+    let table = document.querySelector("#playersTable");
+
+    let myRows = "";
+
+    for(let i = 0; i < players.length; i++)
+    {
+        myRows += "<tr>" + 
+                        "<td>" + players[i].number + "</td>" +
+                        "<td>" + "<img src =' photo/country/" + players[i].nationCode + ".png' alt=\"Error\" width=\"40\" height=\"20px\">"+ "</td>" +
+                        "<td>" + players[i].player + "</td>" +
+                        "<td>" + players[i].position + "</td>" +
+                        "<td>" + players[i].age + "</td>";
+    }
+    table.innerHTML += myRows;
+}
