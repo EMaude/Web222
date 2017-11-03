@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"Ci",
+				"Continent"
+			],
+			[
+				"con",
+				"countries"
+			],
+			[
+				"co",
+				"countries"
+			],
+			[
+				"ByAre",
+				"ByArea2"
+			],
+			[
+				"by",
+				"ByPop1"
+			],
+			[
+				"pop",
+				"Population"
+			],
+			[
+				"Con",
+				"countryList"
+			],
+			[
+				"l",
+				"let"
+			],
+			[
+				"let",
+				"let"
+			],
+			[
+				"Imag",
+				"ImageExist"
+			],
+			[
 				"lan",
 				"lang"
 			],
@@ -12,16 +52,8 @@
 				"createElement"
 			],
 			[
-				"co",
-				"code"
-			],
-			[
 				"tb",
 				"tableBody"
-			],
-			[
-				"con",
-				"countries"
 			],
 			[
 				"cou",
@@ -53,10 +85,11 @@
 			}
 		},
 		{
-			"file": "src/honesty.html",
+			"file": "src/js/a4-country-data.js",
 			"settings":
 			{
-				"buffer_size": 2617,
+				"buffer_size": 82783,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -64,7 +97,8 @@
 			"file": "src/js/myscript.js",
 			"settings":
 			{
-				"buffer_size": 1681,
+				"buffer_size": 4431,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -134,6 +168,10 @@
 	],
 	"file_history":
 	[
+		"/B/maude/Documents/Github/Web222/Assignment4/src/src.do",
+		"/B/maude/Documents/Github/Web222/Assignment4/src/honesty.html",
+		"/B/maude/Documents/Github/Web222/Assignment4/src/js/a4-country-data.js",
+		"/B/maude/Downloads/populate-table-dom/js/populate-table-dom.js",
 		"/B/maude/Documents/Github/Web222/Assignment4/assignment4.sublime-project",
 		"/B/maude/Documents/Github/Web222/Assignment4/js/a4-country-data.js",
 		"/B/maude/Documents/Github/Web222/Assignment4/assignment4.html",
@@ -147,7 +185,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 30.0
 	},
 	"find_in_files":
 	{
@@ -161,6 +199,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Franch"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -168,6 +207,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"French"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -178,7 +218,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -194,38 +234,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/honesty.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2617,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								8,
+								15
 							]
 						],
 						"settings":
@@ -242,20 +252,56 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "src/js/myscript.js",
+					"buffer": 1,
+					"file": "src/js/a4-country-data.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1681,
+						"buffer_size": 82783,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3110,
+								3107
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2400.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "src/js/myscript.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3169,
+								3169
 							]
 						],
 						"settings":
@@ -264,7 +310,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3240.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -275,7 +321,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -290,11 +336,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.441969519343,
 			1.0
 		],
 		"rows":
@@ -312,7 +365,7 @@
 	"project": "assignment4.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -342,7 +395,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
