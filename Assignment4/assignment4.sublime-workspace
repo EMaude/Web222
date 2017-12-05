@@ -76,29 +76,10 @@
 	"buffers":
 	[
 		{
-			"file": "src/assignment4.html",
+			"file": "/B/maude/Documents/Github/OOP244/Workshops/WS06/at-home/reflect.txt",
 			"settings":
 			{
-				"buffer_size": 2505,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/js/a4-country-data.js",
-			"settings":
-			{
-				"buffer_size": 82783,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/js/myscript.js",
-			"settings":
-			{
-				"buffer_size": 4431,
-				"encoding": "UTF-8",
+				"buffer_size": 1,
 				"line_ending": "Windows"
 			}
 		}
@@ -168,9 +149,11 @@
 	],
 	"file_history":
 	[
+		"/B/maude/Documents/Github/Web222/Assignment4/src/js/myscript.js",
+		"/B/maude/Documents/Github/Web222/Assignment4/src/js/a4-country-data.js",
+		"/B/maude/Documents/Github/Web222/Assignment4/src/assignment4.html",
 		"/B/maude/Documents/Github/Web222/Assignment4/src/src.do",
 		"/B/maude/Documents/Github/Web222/Assignment4/src/honesty.html",
-		"/B/maude/Documents/Github/Web222/Assignment4/src/js/a4-country-data.js",
 		"/B/maude/Downloads/populate-table-dom/js/populate-table-dom.js",
 		"/B/maude/Documents/Github/Web222/Assignment4/assignment4.sublime-project",
 		"/B/maude/Documents/Github/Web222/Assignment4/js/a4-country-data.js",
@@ -185,7 +168,7 @@
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -218,69 +201,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/assignment4.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2505,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8,
-								15
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/js/a4-country-data.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 82783,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3110,
-								3107
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2400.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		},
 		{
@@ -288,29 +210,28 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
-					"file": "src/js/myscript.js",
+					"buffer": 0,
+					"file": "/B/maude/Documents/Github/OOP244/Workshops/WS06/at-home/reflect.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4431,
+						"buffer_size": 1,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3169,
-								3169
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 3240.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -321,7 +242,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -365,7 +286,7 @@
 	"project": "assignment4.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -395,7 +316,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},

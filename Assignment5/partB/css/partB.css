@@ -1,0 +1,123 @@
+ /* Assignment 05 - Part B */
+
+ /********************************************************************
+
+ I declare that my assignment is wholly my own work in accordance with Seneca Academic Policy. No part of this assignment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assignment for my use.
+
+ I also declare that no part of this assignment has been distributed to other students.
+
+ Name:  Elliot Maude
+ Dated: 04/12/17
+
+ ********************************************************************/
+
+ /* task 1 */
+body
+{
+  background-image: url("../images/canada_theme.jpg");
+}
+header
+{
+  text-align: center;
+}
+
+ /* task 2 */
+
+body
+{
+  width: 85%;
+  margin: 0 auto;
+}
+
+ /* task 3 */
+nav
+{
+    width: 250px;
+    float: left;
+}
+
+ /* task 4 */
+
+.main
+{
+  width: 60%;
+  float:  left;
+}
+footer
+{
+  clear: both;
+}
+
+ /* task 5 */
+#CA img
+{
+  width: 50px;
+}
+
+#CA
+{
+   font-size: 25px;
+   color: red;
+   position: fixed;
+   top: 10px; right: 10px;
+}
+ /* task 6 */
+
+.province img
+{
+  width: 100px;
+}
+.province
+{
+  float: left;
+  width: 220px;
+  height: 200px;
+}
+
+ /* task 7 */
+ .province img
+ {
+   float: left;
+   margin: 5px;
+ }
+ /* task 8 */
+nav ul
+{
+  list-style: none;
+  font-family: monospace;
+  font-size: 16px;
+  text-shadow: 1px 1px 1px lightblue;
+}
+
+.main
+{
+    text-shadow: 2px 2px 2px lightblue;
+}
+
+.province
+{
+    border: 3px solid #a1a1a1;
+    padding:  6px;
+    border-radius: 10%;
+    margin: 5px;
+}
+
+#AB
+{
+  border-color: #9c1f44;
+}
+
+#BC
+{
+  border-color: #8eaf5f;
+}
+
+#MB
+{
+  border-color: #eb001a;
+}
+
+#NB
+{
+  border-color: 
+}
