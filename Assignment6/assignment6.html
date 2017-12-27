@@ -12,19 +12,111 @@
 
 		<h2>Create Your Account</h2>
 
+
 		<div class="group basic">
 			<h3>Basic Information</h3>
+			<div>
+				<label for="email">Email <span id="req">*</span></label>
+				<input type="email" id="email" name="email" autofocus="autofocus" required="required">
+			</div>
+			<div>
+				<label for="password">Password <span id="req">*</span></label>
+				<input type="password" id="password" name="password" required="required">
+			</div>
+			<div>
+				<label for="RtPassword">RetryPassword <span id="req">*</span></label>
+				<input type="password" id="RtPassword" name="RtPassword" required="required">
+			</div>
+			<div>			
+				<label for="FName">First Name <span id="req">*</span></label>
+				<input type="text" id="Fname" name="FName" required="required">
+			</div>
+			<div>
+				<label for="LName">Last Name <span id="req">*</span></label>
+				<input type="text" id="Lname" name="LName" required="required">
+			</div>
+			<div>
+				<label for="PNum">Phone Number <span id="req">*</span></label>
+				<input type="tel" id="Pnum" name="PNum" required="required">
+			</div>
+			<div>
+				<label for="Addr">Address <span id="req">*</span></label>
+				<input type="text" id="Addr" name="Addr" required="required">
+			</div>
+			<div>
+				<label for="City">City <span id="req">*</span></label>
+				<input type="text" id="City" name="City" required="required">
+			</div>
+			<div>
+				<label for="Province">Province <span id="req">*</span></label>
+				<select id="Province" name="Province">
+					<optgroup label="Provinces">
+						<option value="AB">Alberta</option>
+						<option value="BC">British Columbia</option>
+						<option value="MB">Manitoba</option>
+						<option value="NB">New Brunswick</option>
+						<option value="NL">Newfoundland and Labrador</option>
+						<option value="NS">Nova Scotia</option>
+						<option value="ON">Ontario</option>
+						<option value="PE">Prince Edward Island</option>
+						<option value="QC">Quebec</option>
+						<option value="SK">Saskatchewan</option>
+					</optgroup>
+						<optgroup label="Territories">
+						<option value="NT">Northwest Territories</option>
+						<option value="NU">Nunavut</option>
+						<option value="YT">Yukon</option>
+					</optgroup>
+				</select>
+			</div>
+			<div>
+				<label for="Country">Country <span id="req">*</span></label>
+				<input type="text" id="Country" name="Country" required="required">
+			</div>
+		</div>
 
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email" autofocus="autofocus" required="required"><br>
-			
-			<label for="Password">Password</label>
-			<input type="password" name="password" id="password" required="required"><br>
-			
-			<label for="RtPassword">RetryPassword</label>
-			<input type="password" name="password2" id="password2" required="required"><br>
 
-		</div> 
+		<div class="group Education">
+			<h3>Education</h3>
+			<div>
+				<label for="School">School <span id="req">*</span></label>
+				<input type="text" id="School" name="School" required="required">
+			</div>
+			<div>
+				<label for="Program">Program <span id="req">*</span></label>
+				<input type="text" id="Program" name="Program" required="required">
+			</div>
+			<div>
+				<label for="EdLevel">Education Level</label>
+				<select id="EdLevel" name="EdLevel">
+					<option value="0">-select-</option>
+					<option>Technical Diploma</option>
+					<option>College Diploma</option>
+					<option>Bachelor's Degree</option>
+					<option>Master's Degree</option>
+					<option>Other</option>
+				</select>
+			</div>	
+			<div id="RadioBox">
+				<label for="EdStatus">Education Status</label>
+				<ul>
+					<li><input type="radio" name="EdStatus" id="EdStatus1" value="Graduated"/>Graduated</li>
+					<li><input type="radio" name="EdStatus" id="EdStatus2" value="Currently Enrolled"/>Currently Enrolled</li>
+					<li><input type="radio" name="EdStatus" id="EdStatus3" value="Did Not Graduate"/>Did Not Graduate</li>
+				<ul>
+			</div>
+		</div>
+
+
+		<div class="group Work">
+			<h3>Work Experience</h3>
+		</div>
+
+
+		<div class="group Attachements">
+			<h3>Attachements</h3>
+		</div>
+
 	</form>
 </body>
 </html>
