@@ -1,0 +1,58 @@
+#pagetitle
+{
+	background-color: red;
+	color: white;
+	font-size: 32px;
+	border: 2px, solid;
+	border-radius: 5px;
+}
+
+#com
+{
+	font-size: 20px;
+}
+
+#signup
+{
+	width: 600px;
+	margin: auto;
+	border: 2px, solid;
+	border-radius: 5px;
+	box-shadow: 5px, 5px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	background: white;
+
+}
+
+.group h3
+{
+	background: #a7aaaf;
+}
+
+.group
+{
+	border: 2px, solid, grey;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: auto;
+	width: 50%;
+	background: #d1d3d6;
+}
+
+label
+{
+	 display: inline-block;
+}
+
+.group input
+{
+	width: auto;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	background: grey;
+}
