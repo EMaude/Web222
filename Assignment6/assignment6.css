@@ -3,25 +3,31 @@
 	background-color: red;
 	color: white;
 	font-size: 32px;
-	border: 2px, solid;
+	border: 2px solid;
 	border-radius: 5px;
 	text-align: left;
-	padding-left: 10px
+	margin: auto;
+	padding-left: 10px;
+}
+
+
+#pagetitle p
+{
+	margin: 0px;
+	margin-top: 20px;
 }
 
 #com
 {
 	font-size: 20px;
-	font-style: bold;
 }
 
 #signup
 {
 	width: 600px;
 	margin: auto;
-	border: 2px, solid;
 	border-radius: 5px;
-	box-shadow: 5px, 5px;
+	box-shadow: 0px 0px 20px #d0d0e1;
 	padding-top: 0px;
 	padding-bottom: 10px;
 	background: white;
@@ -30,7 +36,6 @@
 
 .group
 {
-	border: 2px, solid, grey;
 	margin: auto;
 	width: 95%;
 	background: #d1d3d6;
@@ -57,11 +62,24 @@ label
 	 text-align: right;
 }
 
-input, select
+input, select, textarea
 {
 	width: 300px;
 	box-sizing: border-box;
 	border: 1px solid #999;
+	background: white;
+}
+
+button
+{
+	background: red;
+	color: white;
+	text-shadow: 1px 1px black;
+	box-sizing: border-box;
+	border-radius: 1em;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 body
@@ -72,10 +90,10 @@ body
 h2
 {
 	padding-left: 10px;
-	text-shadow: 2px, grey;
+	text-shadow: 1px 1px grey;
 }
 
-#req
+.req
 {
 	color: red;
 }
@@ -86,7 +104,8 @@ h2
 	border: 1px solid black;
 	border-radius: 1em;
 	width: 300px;
-	margin: 10px auto;
+	margin-top: 1em;
+	margin-left: 195px;
 }
 #RadioBox label
 {
@@ -102,4 +121,11 @@ h2
 	padding: 0px;
 	margin: auto;
 	width: auto;
+}
+
+.err
+{
+	color: red;
+	font-size: 16px;
+	text-shadow: 1px white;
 }

@@ -3,9 +3,10 @@
 <head>
 	<title>Sign Up</title>
 	<link rel="stylesheet" href="assignment6.css">
+	<script type="text/javascript" src="assignment6.js"></script>
 </head>
 <body>
-	<form id="signup">
+	<form id="signup" name="signup" autocomplete="on" onsubmit="return formValidation()" method="post" action="https://httpbin.org/post">
 		<div id="pagetitle">
 			<p>JobSearch<span id="com">.com</span></p>
 		</div>
@@ -16,39 +17,45 @@
 		<div class="group basic">
 			<h3>Basic Information</h3>
 			<div>
-				<label for="email">Email <span id="req">*</span></label>
+				<label for="email">Email <span class="req">*</span></label>
 				<input type="email" id="email" name="email" autofocus="autofocus" required="required">
 			</div>
 			<div>
-				<label for="password">Password <span id="req">*</span></label>
-				<input type="password" id="password" name="password" required="required">
+				<label for="password">Password <span class="req">*</span></label>
+				<input type="password" id="password" name="password" required="required" onchange="passValid(this.value)">
+				<span class="err" id="PassErr"></span>
 			</div>
+				
 			<div>
-				<label for="RtPassword">RetryPassword <span id="req">*</span></label>
-				<input type="password" id="RtPassword" name="RtPassword" required="required">
+				<label for="RtPassword">RetryPassword <span class="req">*</span></label>
+				<input type="password" id="RtPassword" name="RtPassword" required="required" onchange="passMatch(this.value)">
+				<span class="err" id="PassMatchErr"></span>
 			</div>
 			<div>			
-				<label for="FName">First Name <span id="req">*</span></label>
-				<input type="text" id="Fname" name="FName" required="required">
+				<label for="FName">First Name <span class="req">*</span></label>
+				<input type="text" id="FName" name="FName" required="required" onchange="fNameValid(this.value)">
+				<span class="err" id="FNameErr"></span>
 			</div>
 			<div>
-				<label for="LName">Last Name <span id="req">*</span></label>
-				<input type="text" id="Lname" name="LName" required="required">
+				<label for="LName">Last Name <span class="req">*</span></label>
+				<input type="text" id="LName" name="LName" required="required" onchange="lNameValid(this.value)">
+			</div>
+				<span class="err" id="LNameErr"></span>	
+			<div>
+				<label for="PNum">Phone Number <span class="req">*</span></label>
+				<input type="tel" id="PNum" name="PNum" required="required" placeholder="999-999-9999" onchange="phoneValid(this.value)">
+				<span class="err" id="PhoneErr"></span>
 			</div>
 			<div>
-				<label for="PNum">Phone Number <span id="req">*</span></label>
-				<input type="tel" id="Pnum" name="PNum" required="required">
-			</div>
-			<div>
-				<label for="Addr">Address <span id="req">*</span></label>
+				<label for="Addr">Address <span class="req">*</span></label>
 				<input type="text" id="Addr" name="Addr" required="required">
 			</div>
 			<div>
-				<label for="City">City <span id="req">*</span></label>
+				<label for="City">City <span class="req">*</span></label>
 				<input type="text" id="City" name="City" required="required">
 			</div>
 			<div>
-				<label for="Province">Province <span id="req">*</span></label>
+				<label for="Province">Province <span class="req">*</span></label>
 				<select id="Province" name="Province">
 					<optgroup label="Provinces">
 						<option value="AB">Alberta</option>
@@ -70,7 +77,7 @@
 				</select>
 			</div>
 			<div>
-				<label for="Country">Country <span id="req">*</span></label>
+				<label for="Country">Country <span class="req">*</span></label>
 				<input type="text" id="Country" name="Country" required="required">
 			</div>
 		</div>
@@ -79,11 +86,11 @@
 		<div class="group Education">
 			<h3>Education</h3>
 			<div>
-				<label for="School">School <span id="req">*</span></label>
+				<label for="School">School <span class="req">*</span></label>
 				<input type="text" id="School" name="School" required="required">
 			</div>
 			<div>
-				<label for="Program">Program <span id="req">*</span></label>
+				<label for="Program">Program <span class="req">*</span></label>
 				<input type="text" id="Program" name="Program" required="required">
 			</div>
 			<div>
@@ -97,24 +104,55 @@
 					<option>Other</option>
 				</select>
 			</div>	
+
 			<div id="RadioBox">
-				<label for="EdStatus">Education Status</label>
+				<label for="EdStatus1">Education Status</label>
 				<ul>
-					<li><input type="radio" name="EdStatus" id="EdStatus1" value="Graduated"/>Graduated</li>
-					<li><input type="radio" name="EdStatus" id="EdStatus2" value="Currently Enrolled"/>Currently Enrolled</li>
-					<li><input type="radio" name="EdStatus" id="EdStatus3" value="Did Not Graduate"/>Did Not Graduate</li>
-				<ul>
+					<li><input type="radio" name="EdStatus" id="EdStatus1" value="Graduated" onchange="edStatusValid()"/>Graduated</li>
+					<li><input type="radio" name="EdStatus" id="EdStatus2" value="Currently Enrolled" onchange="edStatusValid()"/>Currently Enrolled</li>
+					<li><input type="radio" name="EdStatus" id="EdStatus3" value="Did Not Graduate" onchange="edStatusValid()"/>Did Not Graduate</li>
+				</ul>
+				<span class="err" id="EdStatusErr"></span>
+			</div>
+
+			<div>
+				<label for="gradDate">Graduation Date</label>
+				<input type="date" name="gradDate" id="gradDate"/>
 			</div>
 		</div>
 
-
 		<div class="group Work">
 			<h3>Work Experience</h3>
+
+			<div>
+				<label for="Employer">Employer</label>
+				<input type="text" name="Employer" id="Employer"/>
+			</div>
+			<div>
+				<label for="JobTitle">Job Title</label>
+				<input type="text" name="JobTitle" id="JobTitle"/>
+			</div>
+			<div>
+				<label for="Duty">Job Duty</label>
+				<textarea name="Duty" id="Duty"></textarea>
+			</div>
+			<div>
+				<label for="WorkYear">Worked Year</label>
+				<input type="number" min=1 max=20 name="WorkYear" id="WorkYear"/>
+			</div>
 		</div>
 
 
 		<div class="group Attachements">
 			<h3>Attachements</h3>
+			<div>
+				<label for="Attach">Attachments</label>
+				<input type="file" name="Attach" id="Attach" multiple="multiple" />
+			</div>
+			<div>
+				<button type="submit">Apply</button>
+ 				<button type="reset">Reset</button>
+			</div>
 		</div>
 
 	</form>
